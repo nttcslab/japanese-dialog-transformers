@@ -16,7 +16,7 @@
 
 ## 更新履歴
 
-* 2021/09/15 対話モデル（fairseq版 `japanese-dialog-transformer-1.6B`）と評価用コードを公開しました．
+* 2021/09/17 対話モデル（fairseq版 `japanese-dialog-transformer-1.6B`）と評価用コードを公開しました．
 
 ---
 

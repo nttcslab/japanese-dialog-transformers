@@ -19,7 +19,7 @@ This repository provides the information necessary to evaluate the Japanese Tran
 
 ## Update log
 
-* 2021/09/15 Published dialogue models (fairseq version `japanese-dialog-transformer-1.6B`) and evaluation codes.
+* 2021/09/17 Published dialogue models (fairseq version `japanese-dialog-transformer-1.6B`) and evaluation codes.
 
 ---
 

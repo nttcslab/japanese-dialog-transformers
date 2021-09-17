@@ -1,5 +1,7 @@
 # japanese-dialog-transformers
 
+**[日本語の説明文はこちら](README-jp.md)**
+
 This repository provides the information necessary to evaluate the Japanese Transformer Encoder-decoder dialogue model provided by NTT on [fairseq](https://github.com/pytorch/fairseq).
 
 

@@ -1,0 +1,129 @@
+2021-09-17 21:39:09,258 | INFO | dialog | {'_name': None, 'common': {'_name': None, 'no_progress_bar': False, 'log_interval': 100, 'log_format': None, 'log_file': None, 'tensorboard_logdir': None, 'wandb_project': None, 'azureml_logging': False, 'seed': 0, 'cpu': False, 'tpu': False, 'bf16': False, 'memory_efficient_bf16': False, 'fp16': False, 'memory_efficient_fp16': False, 'fp16_no_flatten_grads': False, 'fp16_init_scale': 128, 'fp16_scale_window': None, 'fp16_scale_tolerance': 0.0, 'on_cpu_convert_precision': False, 'min_loss_scale': 0.0001, 'threshold_loss_scale': None, 'amp': False, 'amp_batch_retries': 2, 'amp_init_scale': 128, 'amp_scale_window': None, 'user_dir': None, 'empty_cache_freq': 0, 'all_gather_list_size': 16384, 'model_parallel_size': 1, 'quantization_config_path': None, 'profile': False, 'reset_logging': False, 'suppress_crashes': False, 'use_plasma_view': False, 'plasma_path': '/tmp/plasma'}, 'common_eval': {'_name': None, 'path': 'checkpoints/dials5_1e-4_1li20zh5_tw5.143_step85.pt', 'post_process': None, 'quiet': False, 'model_overrides': '{}', 'results_path': None}, 'distributed_training': {'_name': None, 'distributed_world_size': 1, 'distributed_num_procs': 1, 'distributed_rank': 0, 'distributed_backend': 'nccl', 'distributed_init_method': None, 'distributed_port': -1, 'device_id': 0, 'distributed_no_spawn': False, 'ddp_backend': 'pytorch_ddp', 'ddp_comm_hook': 'none', 'bucket_cap_mb': 25, 'fix_batches_to_gpus': False, 'find_unused_parameters': False, 'gradient_as_bucket_view': False, 'fast_stat_sync': False, 'heartbeat_timeout': -1, 'broadcast_buffers': False, 'slowmo_momentum': None, 'slowmo_algorithm': 'LocalSGD', 'localsgd_frequency': 3, 'nprocs_per_node': 1, 'pipeline_model_parallel': False, 'pipeline_balance': None, 'pipeline_devices': None, 'pipeline_chunks': 0, 'pipeline_encoder_balance': None, 'pipeline_encoder_devices': None, 'pipeline_decoder_balance': None, 'pipeline_decoder_devices': None, 'pipeline_checkpoint': 'never', 'zero_sharding': 'none', 'fp16': False, 'memory_efficient_fp16': False, 'tpu': False, 'no_reshard_after_forward': False, 'fp32_reduce_scatter': False, 'cpu_offload': False, 'use_sharded_state': False}, 'dataset': {'_name': None, 'num_workers': 1, 'skip_invalid_size_inputs_valid_test': False, 'max_tokens': None, 'batch_size': None, 'required_batch_size_multiple': 8, 'required_seq_len_multiple': 1, 'dataset_impl': None, 'data_buffer_size': 10, 'train_subset': 'train', 'valid_subset': 'valid', 'combine_valid_subsets': None, 'ignore_unused_valid_subsets': False, 'validate_interval': 1, 'validate_interval_updates': 0, 'validate_after_updates': 0, 'fixed_validation_seed': None, 'disable_validation': False, 'max_tokens_valid': None, 'batch_size_valid': None, 'max_valid_steps': None, 'curriculum': 0, 'gen_subset': 'test', 'num_shards': 1, 'shard_id': 0}, 'optimization': {'_name': None, 'max_epoch': 0, 'max_update': 0, 'stop_time_hours': 0.0, 'clip_norm': 0.0, 'sentence_avg': False, 'update_freq': [1], 'lr': [0.25], 'stop_min_lr': -1.0, 'use_bmuf': False}, 'checkpoint': {'_name': None, 'save_dir': 'checkpoints', 'restore_file': 'checkpoint_last.pt', 'finetune_from_model': None, 'reset_dataloader': False, 'reset_lr_scheduler': False, 'reset_meters': False, 'reset_optimizer': False, 'optimizer_overrides': '{}', 'save_interval': 1, 'save_interval_updates': 0, 'keep_interval_updates': -1, 'keep_interval_updates_pattern': -1, 'keep_last_epochs': -1, 'keep_best_checkpoints': -1, 'no_save': False, 'no_epoch_checkpoints': False, 'no_last_checkpoints': False, 'no_save_optimizer_state': False, 'best_checkpoint_metric': 'loss', 'maximize_best_checkpoint_metric': False, 'patience': -1, 'checkpoint_suffix': '', 'checkpoint_shard_count': 1, 'load_checkpoint_on_all_dp_ranks': False, 'write_checkpoints_asynchronously': False, 'model_parallel_size': 1}, 'bmuf': {'_name': None, 'block_lr': 1.0, 'block_momentum': 0.875, 'global_sync_iter': 50, 'warmup_iterations': 500, 'use_nbm': False, 'average_sync': False, 'distributed_world_size': 1}, 'generation': {'_name': None, 'beam': 80, 'nbest': 80, 'max_len_a': 0.0, 'max_len_b': 200, 'min_len': 10, 'match_source_len': False, 'unnormalized': False, 'no_early_stop': False, 'no_beamable_mm': False, 'lenpen': 1.0, 'unkpen': 0.0, 'replace_unk': None, 'sacrebleu': False, 'score_reference': False, 'prefix_size': 0, 'no_repeat_ngram_size': 3, 'sampling': True, 'sampling_topk': -1, 'sampling_topp': 0.9, 'constraints': None, 'temperature': 1.0, 'diverse_beam_groups': -1, 'diverse_beam_strength': 0.5, 'diversity_rate': -1.0, 'print_alignment': None, 'print_step': False, 'lm_path': None, 'lm_weight': 0.0, 'iter_decode_eos_penalty': 0.0, 'iter_decode_max_iter': 10, 'iter_decode_force_max_iter': False, 'iter_decode_with_beam': 1, 'iter_decode_with_external_reranker': False, 'retain_iter_history': False, 'retain_dropout': False, 'retain_dropout_modules': None, 'decoding_format': None, 'no_seed_provided': False}, 'eval_lm': {'_name': None, 'output_word_probs': False, 'output_word_stats': False, 'context_window': 0, 'softmax_batch': 9223372036854775807}, 'interactive': {'_name': None, 'buffer_size': 0, 'input': '-'}, 'model': None, 'task': {'_name': 'translation', 'data': 'data/sample/bin/', 'source_lang': 'src', 'target_lang': 'dst', 'load_alignments': False, 'left_pad_source': True, 'left_pad_target': False, 'max_source_positions': 1024, 'max_target_positions': 1024, 'upsample_primary': -1, 'truncate_source': False, 'num_batch_buckets': 0, 'train_subset': 'train', 'dataset_impl': None, 'required_seq_len_multiple': 1, 'eval_bleu': False, 'eval_bleu_args': '{}', 'eval_bleu_detok': 'space', 'eval_bleu_detok_args': '{}', 'eval_tokenized_bleu': False, 'eval_bleu_remove_bpe': None, 'eval_bleu_print_samples': False}, 'criterion': {'_name': 'cross_entropy', 'sentence_avg': True}, 'optimizer': None, 'lr_scheduler': {'_name': 'fixed', 'force_anneal': None, 'lr_shrink': 0.1, 'warmup_updates': 0, 'lr': [0.25]}, 'scoring': {'_name': 'bleu', 'pad': 1, 'eos': 2, 'unk': 3}, 'bpe': {'_name': 'sentencepiece', 'sentencepiece_model': 'data/dicts/sp_oall_32k.model'}, 'tokenizer': {'_name': 'space'}, 'ema': {'_name': None, 'store_ema': False, 'ema_decay': 0.9999, 'ema_start_update': 0, 'ema_seed_model': None, 'ema_update_freq': 1, 'ema_fp32': False}, 'simul_type': None}
+2021-09-17 21:39:09,313 | INFO | dialog | loading model(s) from checkpoints/dials5_1e-4_1li20zh5_tw5.143_step85.pt
+2021-09-17 21:39:09,313 | INFO | dialog | loading model(s) from checkpoints/dials5_1e-4_1li20zh5_tw5.143_step85.pt
+2021-09-17 21:39:25,653 | INFO | dialog | loading done
+2021-09-17 21:39:26,552 | INFO | dialog | [('いらっしゃいませー', 0.0)]
+2021-09-17 21:40:17,102 | INFO | dialog | input_seq: ['[SPK1]いらっしゃいませー[SEP][SPK2]へいらっしゃい！']
+2021-09-17 21:40:20,054 | INFO | dialog | system_utt_cands: H-0	-3.0594966411590576	あ 、 どうも ! ▁ えっ と ー 、 お いくら ですか ?
+2021-09-17 21:40:20,054 | INFO | dialog | system_utt_cands: D-0	-3.0594966411590576	あ、どうも! えっとー、おいくらですか?
+2021-09-17 21:40:20,054 | INFO | dialog | system_utt_cands: P-0	-8.1395 -0.8186 -6.4982 -5.7860 -2.8855 -11.1670 -0.0529 -5.5518 -1.4051 -8.0688 -9.0689 -1.2867 -0.7932 -0.2726
+2021-09-17 21:40:20,054 | INFO | dialog | system_utt_cands: H-0	-3.3157236576080322	は いい って き ま ー す ! たの し み だ ぁ !
+2021-09-17 21:40:20,054 | INFO | dialog | system_utt_cands: D-0	-3.3157236576080322	はいいってきまーす!たのしみだぁ!
+2021-09-17 21:40:20,055 | INFO | dialog | system_utt_cands: P-0	-9.2918 -12.8115 -6.4918 -2.2294 -0.4680 -0.3431 -0.3451 -3.7522 -17.4677 -0.5837 -1.3598 -6.7820 -6.0876 -3.5937 -0.1461
+2021-09-17 21:40:20,055 | INFO | dialog | sim: 0.7058823529411765, cand: へいらっしゃーい, contexts: いらっしゃいませー
+2021-09-17 21:40:20,055 | INFO | dialog | self: sim: 0.6666666666666666, cand: !, contexts: い!
+2021-09-17 21:40:20,055 | INFO | dialog | system_utt_cands: H-0	-3.3359532356262207	へ いらっしゃ ーい !! い ! き ! ま ! す !
+2021-09-17 21:40:20,055 | INFO | dialog | system_utt_cands: D-0	-3.3359532356262207	へいらっしゃーい!!い!き!ま!す!
+2021-09-17 21:40:20,055 | INFO | dialog | system_utt_cands: P-0	-10.2315 -1.7935 -6.2019 -6.0826 -16.9742 -6.9950 -10.8093 -0.1282 -0.8706 -0.1003 -1.1513 -0.7515 -0.4761
+2021-09-17 21:40:20,056 | INFO | dialog | system_utt_cands: H-0	-3.3601808547973633	パン は ? ▁マ シュ マ ロ ? ▁ チョコ ? ▁ デ ニ ッシュ ?
+2021-09-17 21:40:20,056 | INFO | dialog | system_utt_cands: D-0	-3.3601808547973633	パンは? マシュマロ? チョコ? デニッシュ?
+2021-09-17 21:40:20,056 | INFO | dialog | system_utt_cands: P-0	-15.8521 -6.2802 -7.2838 -20.1870 -5.9359 -0.0350 -0.0072 -4.3323 -2.5260 -3.6786 -0.2847 -2.2566 -11.7172 -0.5813 -0.0079 -0.1664 -1.2789
+2021-09-17 21:40:20,057 | INFO | dialog | system_utt_cands: H-0	-3.4049599170684814	なんて 呼んだ ら いいですか ? ▁ こっちは かさ ね って 呼んで ください
+2021-09-17 21:40:20,057 | INFO | dialog | system_utt_cands: D-0	-3.4049599170684814	なんて呼んだらいいですか? こっちはかさねって呼んでください
+2021-09-17 21:40:20,057 | INFO | dialog | system_utt_cands: P-0	-15.4917 -3.0571 -0.0403 -0.8176 -1.1962 -7.1943 -11.3363 -17.8011 -2.5750 -2.2320 -0.4988 -0.3244 -1.2952
+2021-09-17 21:40:20,059 | INFO | dialog | [('あ、どうも! えっとー、おいくらですか?', tensor(-3.0595, device='cuda:0')), ('はいいってきまーす!たのしみだぁ!', tensor(-3.3157, device='cuda:0')), ('へいらっしゃーい!!い!き!ま!す!', tensor(-3.3360, device='cuda:0')), ('パンは? マシュマロ? チョコ? デニッシュ?', tensor(-3.3602, device='cuda:0')), ('なんて呼んだらいいですか? こっちはかさねって呼んでください', tensor(-5.4050, device='cuda:0'))]
+2021-09-17 21:40:20,060 | INFO | dialog | sys_uttr: あ、どうも! えっとー、おいくらですか?
+2021-09-17 21:40:38,592 | INFO | dialog | input_seq: ['[SPK1]いらっしゃいませー[SEP][SPK2]へいらっしゃい！[SEP][SPK1]あ、どうも! えっとー、おいくらですか?[SEP][SPK2]まず座ってくだせぇよ']
+2021-09-17 21:40:41,255 | INFO | dialog | system_utt_cands: H-0	-2.4793639183044434	あ 、 すみません 。 ▁ お茶 、 お願いします 。 ▁ はい 、 座り ました 。
+2021-09-17 21:40:41,255 | INFO | dialog | system_utt_cands: D-0	-2.4793639183044434	あ、すみません。 お茶、お願いします。 はい、座りました。
+2021-09-17 21:40:41,255 | INFO | dialog | system_utt_cands: P-0	-3.3868 -0.1654 -5.2255 -2.7466 -1.1529 -12.7423 -6.2283 -4.0857 -1.3205 -4.8478 -5.4612 -1.0574 -5.8923 -1.2202 -1.1000 -0.5986
+2021-09-17 21:40:41,257 | INFO | dialog | system_utt_cands: H-0	-2.4905457496643066	あ 、 はい 。 すみません 、 ゆっくり します ! ▁ お ね が い しま ー す 。
+2021-09-17 21:40:41,257 | INFO | dialog | system_utt_cands: D-0	-2.4905457496643066	あ、はい。すみません、ゆっくりします! おねがいしまーす。
+2021-09-17 21:40:41,257 | INFO | dialog | system_utt_cands: P-0	-3.3868 -0.1654 -2.0285 -3.2447 -7.4720 -4.1745 -12.7949 -4.5436 -6.8497 -4.1347 -6.2707 -7.2390 -0.5608 -0.1356 -0.7250 -0.1629 -0.0626 -4.0384 -0.2793
+2021-09-17 21:40:41,257 | INFO | dialog | system_utt_cands: H-0	-2.5790605545043945	はい ! ▁ えー と 、 7 800 円 ですね !
+2021-09-17 21:40:41,258 | INFO | dialog | system_utt_cands: D-0	-2.5790605545043945	はい! えーと、7800円ですね!
+2021-09-17 21:40:41,258 | INFO | dialog | system_utt_cands: P-0	-4.9729 -3.2536 -2.7337 -7.7266 -0.3766 -0.5218 -12.9089 -7.0462 -0.9096 -1.8913 -1.5491 -0.7592
+2021-09-17 21:40:41,259 | INFO | dialog | system_utt_cands: H-0	-2.648001194000244	す わ って ます ! ▁ ち り ん ち り ーん
+2021-09-17 21:40:41,259 | INFO | dialog | system_utt_cands: D-0	-2.648001194000244	すわってます! ちりんちりーん
+2021-09-17 21:40:41,259 | INFO | dialog | system_utt_cands: P-0	-7.5084 -1.8666 -2.4545 -2.0235 -3.4781 -2.7567 -13.7406 -7.7602 -3.1375 -0.6157 -0.0151 -3.0000 -1.3065
+2021-09-17 21:40:41,259 | INFO | dialog | system_utt_cands: H-0	-2.711603879928589	あ 、 はい ▁ ごめん なさ ーい ( 笑 )
+2021-09-17 21:40:41,260 | INFO | dialog | system_utt_cands: D-0	-2.711603879928589	あ、はい ごめんなさーい(笑)
+2021-09-17 21:40:41,260 | INFO | dialog | system_utt_cands: P-0	-3.3868 -0.1654 -2.0285 -5.0377 -18.7672 -2.6743 -0.3945 -7.1321 -3.1623 -0.0088 -0.2746
+2021-09-17 21:40:41,262 | INFO | dialog | [('あ、すみません。 お茶、お願いします。 はい、座りました。', tensor(-2.4794, device='cuda:0')), ('あ、はい。すみません、ゆっくりします! おねがいしまーす。', tensor(-2.4905, device='cuda:0')), ('はい! えーと、7800円ですね!', tensor(-2.5791, device='cuda:0')), ('すわってます! ちりんちりーん', tensor(-2.6480, device='cuda:0')), ('あ、はい ごめんなさーい ', tensor(-2.7116, device='cuda:0'))]
+2021-09-17 21:40:41,262 | INFO | dialog | sys_uttr: あ、すみません。 お茶、お願いします。 はい、座りました。
+2021-09-17 21:40:54,866 | INFO | dialog | input_seq: ['[SPK2]へいらっしゃい！[SEP][SPK1]あ、どうも! えっとー、おいくらですか?[SEP][SPK2]まず座ってくだせぇよ[SEP][SPK1]あ、すみません。 お茶、お願いします。 はい、座りました。[SEP][SPK2]さあさあ何握りましょうか！？']
+2021-09-17 21:40:57,721 | INFO | dialog | sim: 0.5714285714285714, cand: じゃあ、お茶とおむすび一つお願いします, contexts: お茶、お願いします
+2021-09-17 21:40:57,722 | INFO | dialog | system_utt_cands: H-0	-2.324390172958374	あ 、 ありがとうございます 。 ▁ あ 、 そうですね 、 ▁ じゃあ 、 お茶 とお む す び 一つ お願いします 。
+2021-09-17 21:40:57,722 | INFO | dialog | system_utt_cands: D-0	-2.324390172958374	あ、ありがとうございます。 あ、そうですね、 じゃあ、お茶とおむすび一つお願いします。
+2021-09-17 21:40:57,722 | INFO | dialog | system_utt_cands: P-0	-3.3227 -0.1880 -8.9012 -0.6480 -0.1862 -4.3467 -0.1939 -7.0029 -2.8782 -1.4868 -5.5295 -0.6731 -5.1214 -9.5068 -11.6585 -0.1549 -0.0015 -6.0174 -1.9653 -0.2713 -0.3667
+2021-09-17 21:40:57,723 | INFO | dialog | system_utt_cands: H-0	-2.3342254161834717	何 に しましょう か ? ▁ あ 、 ステ ー キ とか どうですか ?
+2021-09-17 21:40:57,723 | INFO | dialog | system_utt_cands: D-0	-2.3342254161834717	何にしましょうか? あ、ステーキとかどうですか?
+2021-09-17 21:40:57,723 | INFO | dialog | system_utt_cands: P-0	-11.6843 -2.5979 -0.7072 -2.0307 -2.2754 -0.6930 -3.6279 -0.1318 -15.8734 -0.1406 -0.0009 -5.3475 -4.8192 -0.2035 -0.3801
+2021-09-17 21:40:57,724 | INFO | dialog | sim: 1.0, cand: あ、すみません, contexts: あ、すみません
+2021-09-17 21:40:57,724 | INFO | dialog | system_utt_cands: H-0	-2.3545491695404053	あ 、 じゃあ 、 グリーン ティ で 。 ▁ あ 、 すみません 。
+2021-09-17 21:40:57,724 | INFO | dialog | system_utt_cands: D-0	-2.3545491695404053	あ、じゃあ、グリーンティで。 あ、すみません。
+2021-09-17 21:40:57,724 | INFO | dialog | system_utt_cands: P-0	-3.3227 -0.1880 -4.0680 -1.1917 -16.1427 -5.3755 -2.6884 -0.9978 -2.7594 -2.6955 -0.0986 -4.6017 -1.1522 -2.2741
+2021-09-17 21:40:57,725 | INFO | dialog | system_utt_cands: H-0	-2.3899219036102295	え ーっと 、 やっぱり ジャ ス ミン 茶 でお願いします 。
+2021-09-17 21:40:57,725 | INFO | dialog | system_utt_cands: D-0	-2.3899219036102295	えーっと、やっぱりジャスミン茶でお願いします。
+2021-09-17 21:40:57,725 | INFO | dialog | system_utt_cands: P-0	-6.6820 -1.2557 -0.6564 -10.5656 -12.2175 -0.2960 -0.0043 -2.2226 -2.6019 -0.6777 -0.7475
+2021-09-17 21:40:57,726 | INFO | dialog | sim: 0.8, cand: あ、お茶もお願いします, contexts: お茶、お願いします
+2021-09-17 21:40:57,726 | INFO | dialog | system_utt_cands: H-0	-2.448089838027954	じゃあ 、 ご飯 で 。 ▁ あ 、 お茶 も お願いします 。
+2021-09-17 21:40:57,726 | INFO | dialog | system_utt_cands: D-0	-2.448089838027954	じゃあ、ご飯で。 あ、お茶もお願いします。
+2021-09-17 21:40:57,726 | INFO | dialog | system_utt_cands: P-0	-7.9844 -0.5833 -15.3822 -3.4882 -1.3347 -2.7572 -3.1233 -0.0708 -5.3283 -3.6795 -1.2337 -0.3895 -0.5588
+2021-09-17 21:40:57,728 | INFO | dialog | [('あ、ありがとうございます。 あ、そうですね、 じゃあ、お茶とおむすび一つお願いします。', tensor(-2.3244, device='cuda:0')), ('何にしましょうか? あ、ステーキとかどうですか?', tensor(-2.3342, device='cuda:0')), ('あ、じゃあ、グリーンティで。 あ、すみません。', tensor(-2.3545, device='cuda:0')), ('えーっと、やっぱりジャスミン茶でお願いします。', tensor(-2.3899, device='cuda:0')), ('じゃあ、ご飯で。 あ、お茶もお願いします。', tensor(-2.4481, device='cuda:0'))]
+2021-09-17 21:40:57,728 | INFO | dialog | sys_uttr: あ、ありがとうございます。 あ、そうですね、 じゃあ、お茶とおむすび一つお願いします。
+2021-09-17 21:41:20,036 | INFO | dialog | input_seq: ['[SPK2]まず座ってくだせぇよ[SEP][SPK1]あ、すみません。 お茶、お願いします。 はい、座りました。[SEP][SPK2]さあさあ何握りましょうか！？[SEP][SPK1]あ、ありがとうございます。 あ、そうですね、 じゃあ、お茶とおむすび一つお願いします。[SEP][SPK2]おめー寿司屋に来てお結びもらおうたあふてえやつだぜ']
+2021-09-17 21:41:24,665 | INFO | dialog | sim: 0.5833333333333334, cand: では、あふてえやつお願いします, contexts: お茶、お願いします
+2021-09-17 21:41:24,666 | INFO | dialog | system_utt_cands: H-0	-2.025329828262329	あ 、 そうでした 。 ▁ では 、 あ ふ て え やつ お願いします 。
+2021-09-17 21:41:24,666 | INFO | dialog | system_utt_cands: D-0	-2.025329828262329	あ、そうでした。 では、あふてえやつお願いします。
+2021-09-17 21:41:24,666 | INFO | dialog | system_utt_cands: P-0	-2.7934 -1.0503 -9.1196 -2.7893 -0.3993 -7.3381 -0.4461 -9.2273 -1.4591 -0.1428 -1.0232 -1.4693 -5.6624 -0.2344 -0.6745
+2021-09-17 21:41:24,667 | INFO | dialog | sim: 0.8235294117647058, cand: あははは、すみません, contexts: あ、すみません
+2021-09-17 21:41:24,667 | INFO | dialog | sim: 0.9090909090909091, cand: ありがとうございます, contexts: あ、ありがとうございます
+2021-09-17 21:41:24,667 | INFO | dialog | system_utt_cands: H-0	-2.3574941158294678	あ は は は 、 すみません 。 ▁ ありがとうございます 。 ▁ お茶 は お茶 でも 、 渋 い お茶 に してください 。
+2021-09-17 21:41:24,667 | INFO | dialog | system_utt_cands: D-0	-2.3574941158294678	あははは、すみません。 ありがとうございます。 お茶はお茶でも、渋いお茶にしてください。
+2021-09-17 21:41:24,668 | INFO | dialog | system_utt_cands: P-0	-2.7934 -2.9641 -0.1390 -3.3580 -4.0753 -4.8126 -0.6815 -0.5365 -7.9641 -0.3306 -1.5807 -6.0777 -3.7455 -7.6023 -4.8745 -1.5088 -9.5586 -1.1647 -2.3489 -8.0378 -2.6371 -0.6072 -0.8275
+2021-09-17 21:41:24,668 | INFO | dialog | system_utt_cands: H-0	-2.4397311210632324	え 、 寿司 屋で お む す び 貰え るんですか ?
+2021-09-17 21:41:24,668 | INFO | dialog | system_utt_cands: D-0	-2.4397311210632324	え、寿司屋でおむすび貰えるんですか?
+2021-09-17 21:41:24,668 | INFO | dialog | system_utt_cands: P-0	-5.9042 -1.2153 -7.3044 -3.3031 -2.1989 -0.0752 -0.0056 -0.0015 -11.0156 -8.2771 -1.1402 -1.7963
+2021-09-17 21:41:24,669 | INFO | dialog | sim: 0.6666666666666666, cand: 握りでお願いします, contexts: お茶、お願いします
+2021-09-17 21:41:24,669 | INFO | dialog | sim: 1.0, cand: あ、すみません, contexts: あ、すみません
+2021-09-17 21:41:24,670 | INFO | dialog | sim: 0.8, cand: お願いします, contexts: お茶、お願いします
+2021-09-17 21:41:24,670 | INFO | dialog | system_utt_cands: H-0	-2.582552433013916	握り でお願いします 。 ▁ あ 、 すみません 。 ▁ それ じゃあ 、 お茶 2 つ で 、 ▁ お願いします 。
+2021-09-17 21:41:24,670 | INFO | dialog | system_utt_cands: D-0	-2.582552433013916	握りでお願いします。 あ、すみません。 それじゃあ、お茶2つで、 お願いします。
+2021-09-17 21:41:24,670 | INFO | dialog | system_utt_cands: P-0	-13.5776 -11.4927 -0.5422 -0.7931 -1.8998 -0.7717 -3.7493 -0.6533 -0.7665 -9.7661 -1.3197 -0.4422 -3.9531 -10.6446 -0.4084 -3.7896 -6.1585 -3.3641 -3.6334 -0.1101 -0.4063
+2021-09-17 21:41:24,671 | INFO | dialog | sim: 0.5945945945945946, cand: あ、じゃあ、おむすびは一枚でいいです, contexts: じゃあ、お茶とおむすび一つお願いします
+2021-09-17 21:41:24,672 | INFO | dialog | system_utt_cands: H-0	-2.5871379375457764	あ 、 じゃあ 、 お む す び は 一枚 で いいです ! ▁ あ ふ て ぇ やつ でも いいですよ !!
+2021-09-17 21:41:24,672 | INFO | dialog | system_utt_cands: D-0	-2.5871379375457764	あ、じゃあ、おむすびは一枚でいいです! あふてぇやつでもいいですよ!!
+2021-09-17 21:41:24,672 | INFO | dialog | system_utt_cands: P-0	-2.7934 -1.0503 -5.7153 -1.1573 -4.8870 -1.7450 -0.0201 -0.0022 -3.8791 -18.4343 -1.4618 -2.9033 -6.5069 -1.4505 -4.2455 -4.5761 -0.1143 -2.6742 -2.3881 -6.0379 -5.9954 -6.8106 -0.9979
+2021-09-17 21:41:24,674 | INFO | dialog | [('あ、そうでした。 では、あふてえやつお願いします。', tensor(-2.0253, device='cuda:0')), ('あははは、すみません。 ありがとうございます。 お茶はお茶でも、渋いお茶にしてください。', tensor(-2.3575, device='cuda:0')), ('え、寿司屋でおむすび貰えるんですか?', tensor(-2.4397, device='cuda:0')), ('握りでお願いします。 あ、すみません。 それじゃあ、お茶2つで、 お願いします。', tensor(-2.5826, device='cuda:0')), ('あ、じゃあ、おむすびは一枚でいいです! あふてぇやつでもいいですよ!!', tensor(-2.5871, device='cuda:0'))]
+2021-09-17 21:41:24,674 | INFO | dialog | sys_uttr: あ、そうでした。 では、あふてえやつお願いします。
+2021-09-17 21:41:32,412 | INFO | dialog | input_seq: ['[SPK2]さあさあ何握りましょうか！？[SEP][SPK1]あ、ありがとうございます。 あ、そうですね、 じゃあ、お茶とおむすび一つお願いします。[SEP][SPK2]おめー寿司屋に来てお結びもらおうたあふてえやつだぜ[SEP][SPK1]あ、そうでした。 では、あふてえやつお願いします。[SEP][SPK2]だれだよあふてえやつ']
+2021-09-17 21:41:35,568 | INFO | dialog | sim: 0.7692307692307693, cand: あ、やっぱりお茶とおむすび、お願いします, contexts: じゃあ、お茶とおむすび一つお願いします
+2021-09-17 21:41:35,568 | INFO | dialog | system_utt_cands: H-0	-2.1978302001953125	あ 、 やっぱり お茶 とお む す び 、 お願いします 。
+2021-09-17 21:41:35,568 | INFO | dialog | system_utt_cands: D-0	-2.1978302001953125	あ、やっぱりお茶とおむすび、お願いします。
+2021-09-17 21:41:35,568 | INFO | dialog | system_utt_cands: P-0	-2.7489 -0.9844 -11.4019 -5.4909 -2.0112 -0.0649 -0.0038 -0.0016 -9.9814 -4.1939 -0.3304 -0.8363
+2021-09-17 21:41:35,569 | INFO | dialog | sim: 0.6363636363636364, cand: あ、コーヒーもお願いします, contexts: お茶、お願いします
+2021-09-17 21:41:35,569 | INFO | dialog | all sim: 0.5333333333333333, cand: あ、僕です。 あ、コーヒーもお願いします。, contexts: あ、そうでした。 では、あふてえやつお願いします。
+2021-09-17 21:41:35,569 | INFO | dialog | system_utt_cands: H-0	-2.2810468673706055	あ 、 僕 です 。 ▁ あ 、 コーヒー も お願いします 。
+2021-09-17 21:41:35,569 | INFO | dialog | system_utt_cands: D-0	-2.2810468673706055	あ、僕です。 あ、コーヒーもお願いします。
+2021-09-17 21:41:35,570 | INFO | dialog | system_utt_cands: P-0	-2.7489 -0.9844 -10.8986 -1.6996 -0.5311 -1.3286 -2.6695 -1.1783 -16.2816 -2.8130 -0.9514 -0.2529 -0.4434
+2021-09-17 21:41:35,570 | INFO | dialog | system_utt_cands: H-0	-2.2906289100646973	あ ふ て え 、 、 、 誰 でしょう 、 、
+2021-09-17 21:41:35,571 | INFO | dialog | system_utt_cands: D-0	-2.2906289100646973	あふてえ、、、誰でしょう、、
+2021-09-17 21:41:35,571 | INFO | dialog | system_utt_cands: P-0	-2.7489 -3.4278 -0.2265 -0.2501 -8.6255 -3.7244 -0.7474 -7.6371 -4.2606 -2.6603 -0.7747 -4.5727
+2021-09-17 21:41:35,572 | INFO | dialog | system_utt_cands: H-0	-2.405975580215454	あ 、 それ です 。 ▁ と 、 そろそろ お時間 ですね 。 ▁ 失礼します 。
+2021-09-17 21:41:35,572 | INFO | dialog | system_utt_cands: D-0	-2.405975580215454	あ、それです。 と、そろそろお時間ですね。 失礼します。
+2021-09-17 21:41:35,572 | INFO | dialog | system_utt_cands: P-0	-2.7489 -0.9844 -8.0655 -4.3755 -1.2292 -0.9522 -13.3965 -1.4132 -6.8007 -3.3050 -1.1098 -0.2705 -2.6151 -7.8709 -0.2546 -0.1454
+2021-09-17 21:41:35,574 | INFO | dialog | system_utt_cands: H-0	-2.4082999229431152	あー あ 、 間違え ました 。 ▁ア フタ ヌ ーン ティー の 間違い です 。
+2021-09-17 21:41:35,574 | INFO | dialog | system_utt_cands: D-0	-2.4082999229431152	あーあ、間違えました。 アフタヌーンティーの間違いです。
+2021-09-17 21:41:35,574 | INFO | dialog | system_utt_cands: P-0	-9.3491 -6.2316 -0.9436 -9.3617 -1.1624 -0.7530 -10.7079 -2.4969 -0.0822 -0.0484 -0.1843 -6.1509 -5.3789 -1.0800 -0.2880 -1.3721
+2021-09-17 21:41:35,576 | INFO | dialog | [('あ、やっぱりお茶とおむすび、お願いします。', tensor(-2.1978, device='cuda:0')), ('あ、僕です。 あ、コーヒーもお願いします。', tensor(-2.2810, device='cuda:0')), ('あふてえ、、、誰でしょう、、', tensor(-2.2906, device='cuda:0')), ('あーあ、間違えました。 アフタヌーンティーの間違いです。', tensor(-2.4083, device='cuda:0')), ('あ、それです。 と、そろそろお時間ですね。 失礼します。', tensor(-1000004.3750, device='cuda:0'))]
+2021-09-17 21:41:35,576 | INFO | dialog | sys_uttr: あ、やっぱりお茶とおむすび、お願いします。
+2021-09-17 21:41:42,608 | INFO | dialog | input_seq: ['[SPK2]おめー寿司屋に来てお結びもらおうたあふてえやつだぜ[SEP][SPK1]あ、そうでした。 では、あふてえやつお願いします。[SEP][SPK2]だれだよあふてえやつ[SEP][SPK1]あ、やっぱりお茶とおむすび、お願いします。[SEP][SPK2]すんませんでした']
+2021-09-17 21:41:45,850 | INFO | dialog | sim: 0.7368421052631579, cand: お茶とおむすびで、お勘定お願いします, contexts: あ、やっぱりお茶とおむすび、お願いします
+2021-09-17 21:41:45,850 | INFO | dialog | system_utt_cands: H-0	-1.942203164100647	お茶 とお む す び で 、 お 勘定 お願いします 。
+2021-09-17 21:41:45,850 | INFO | dialog | system_utt_cands: D-0	-1.942203164100647	お茶とおむすびで、お勘定お願いします。
+2021-09-17 21:41:45,851 | INFO | dialog | system_utt_cands: P-0	-7.8389 -2.4603 -0.0405 -0.0073 -0.0032 -5.3935 -3.1433 -5.9102 -3.1735 -4.5686 -0.5315 -0.5531
+2021-09-17 21:41:45,852 | INFO | dialog | system_utt_cands: H-0	-2.142840623855591	いえいえ 。 ▁ では この お む す び を どうぞ 。
+2021-09-17 21:41:45,852 | INFO | dialog | system_utt_cands: D-0	-2.142840623855591	いえいえ。 ではこのおむすびをどうぞ。
+2021-09-17 21:41:45,852 | INFO | dialog | system_utt_cands: P-0	-6.1329 -2.6397 -1.6216 -4.6460 -12.2293 -3.0188 -1.9820 -0.0123 -0.0031 -3.3317 -2.9897 -0.7289 -0.8532
+2021-09-17 21:41:45,853 | INFO | dialog | system_utt_cands: H-0	-2.36704683303833	あ ふ て え やつ どんな あ じ ですか ?
+2021-09-17 21:41:45,853 | INFO | dialog | system_utt_cands: D-0	-2.36704683303833	あふてえやつどんなあじですか?
+2021-09-17 21:41:45,853 | INFO | dialog | system_utt_cands: P-0	-3.8403 -1.5525 -0.0969 -0.1117 -0.9599 -18.4022 -7.0223 -0.2016 -3.9650 -1.0391 -0.3728
+2021-09-17 21:41:45,855 | INFO | dialog | system_utt_cands: H-0	-2.4591774940490723	いえいえ ! 大丈夫ですよ ! ▁ では ! お茶 とお む す び の セット ですね ! ▁ お 待た せ しました ー !
+2021-09-17 21:41:45,855 | INFO | dialog | system_utt_cands: D-0	-2.4591774940490723	いえいえ!大丈夫ですよ! では!お茶とおむすびのセットですね! お待たせしましたー!
+2021-09-17 21:41:45,855 | INFO | dialog | system_utt_cands: P-0	-6.1329 -7.3771 -9.5482 -1.2239 -2.0815 -4.6524 -9.2304 -7.1758 -0.9210 -0.0411 -0.0049 -0.0018 -8.9293 -2.1763 -5.1983 -0.8007 -1.8465 -5.4021 -3.8039 -0.0011 -0.5921 -5.9348 -1.2043 -0.8681
+2021-09-17 21:41:45,856 | INFO | dialog | system_utt_cands: H-0	-2.526074171066284	( 笑 ) ▁ 本日 も お つかれ さま でした 。
+2021-09-17 21:41:45,856 | INFO | dialog | system_utt_cands: D-0	-2.526074171066284	(笑) 本日もおつかれさまでした。
+2021-09-17 21:41:45,857 | INFO | dialog | system_utt_cands: P-0	-10.5866 -2.1862 -0.0069 -2.4545 -14.6991 -3.0824 -5.6864 -2.2354 -0.2608 -0.6830 -0.9966 -0.8543
+2021-09-17 21:41:45,859 | INFO | dialog | [('お茶とおむすびで、お勘定お願いします。', tensor(-1.9422, device='cuda:0')), ('いえいえ。 ではこのおむすびをどうぞ。', tensor(-2.1428, device='cuda:0')), ('あふてえやつどんなあじですか?', tensor(-2.3670, device='cuda:0')), ('いえいえ!大丈夫ですよ! では!お茶とおむすびのセットですね! お待たせしましたー!', tensor(-2.4592, device='cuda:0')), ('  本日もおつかれさまでした。', tensor(-2.5261, device='cuda:0'))]
+2021-09-17 21:41:45,859 | INFO | dialog | sys_uttr: お茶とおむすびで、お勘定お願いします。

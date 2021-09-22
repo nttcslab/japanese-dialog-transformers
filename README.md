@@ -19,13 +19,13 @@ This repository provides the information necessary to evaluate the Japanese Tran
 
 ## Update log
 
-* 2021/09/17 Published dialogue models (fairseq version `japanese-dialog-transformer-1.6B`) and evaluation codes.
+* Sept. 17, 2021: Published dialogue models (fairseq version `japanese-dialog-transformer-1.6B`), datasets(`JEmpatheticDialogues` and `JPersonaChat`) and evaluation codes.
 
 ---
 
 ## Notice for using the codes
 The dialogue models provided are for evaluation and verification of model performance.
-Before downloading these models, please read the [LICENSE](LISENCE.md) and [CAUTION](Notice-jp.md) documents. You can download and use these models only if you agree to the following three points.
+Before downloading these models, please read the [LICENSE](LICENSE.md) and [CAUTION](Notice-jp.md) documents. You can download and use these models only if you agree to the following three points.
 
 1. [LICENSE](LICENSE.md)
 2. To be used only for the purpose of evaluation and verification of this model, and not for the purpose of providing dialogue service itself.
@@ -64,7 +64,7 @@ The verification environment is as follows.
 - CUDA 11.1/10.2
 - Pytorch 1.8.2 （For the installation commands, be sure to check the [official page](https://pytorch.org/get-started/locally/). We recommend using pip.)
 - fairseq 1.0.0（validated commit ID: 8adff65ab30dd5f3a3589315bbc1fafad52943e7）
-- sentencepiece 0.19.6
+- sentencepiece 0.1.96
 
 When installing fairseq, please check the official page and install the latest version. Normal pip install will only install the older version 0.10.2.
 If you want to run finetune with your own data, you need to install the standalone version of sentencepiece.
@@ -133,7 +133,7 @@ fairseq-validate $DATA_PATH \
 ### Finetuning with Persona-chat and EmpatheticDialogues
 By finetuning the Pretrained model with PersonaChat or EmpatheticDialogues, you can create a model that is almost identical to the finetuned model provided.
 
-If you have your own dialogue data, you can place the data in the same format in data/*/raw and perform Finetune on that data. Please note, however, that we do not allow the release or distribution of Finetune models under the LISENCE. You can release your own data and let a third party run Finetune from this model.
+If you have your own dialogue data, you can place the data in the same format in data/*/raw and perform Finetune on that data. Please note, however, that we do not allow the release or distribution of Finetune models under the LICENSE. You can release your own data and let a third party run Finetune from this model.
 
 #### Downloading and converting datasets
 
@@ -150,4 +150,4 @@ python scripts/extract_ed.py japanese_empathetic_dialogues.xlsx data/empdial/raw
 
 ## License
 
-[LISENCE](LICENSE.md)
+[LICENSE](LICENSE.md)

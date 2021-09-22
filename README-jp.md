@@ -16,7 +16,7 @@
 
 ## 更新履歴
 
-* 2021/09/17 対話モデル（fairseq版 `japanese-dialog-transformer-1.6B`）と評価用コードを公開しました．
+* 2021/09/17 対話モデル（fairseq版 `japanese-dialog-transformer-1.6B`），データセット(`JEmpatheticDialogues` and `JPersonaChat`)，および評価用コードを公開しました．
 
 ---
 
@@ -59,7 +59,7 @@
 - CUDA 11.1/10.2
 - Pytorch 1.8.2 （インストールコマンドは必ず[公式ページ](https://pytorch.org/get-started/locally/)をご確認ください．pipを推奨します．）
 - fairseq 1.0.0（検証時のcommit IDは8adff65ab30dd5f3a3589315bbc1fafad52943e7）
-- sentencepiece 0.19.6
+- sentencepiece 0.1.96
 
 fairseqのインストールに当たっては，公式ページをご確認いただき，最新版をインストールください．通常のpip installでは旧バージョンの0.10.2までしか入りません．
 また，独自のデータでfinetuneを行う場合は，sentencepieceのスタンドアローン版のインストールが必要です．

@@ -63,11 +63,12 @@ The verification environment is as follows.
 - Python 3.8.10 on [miniconda](https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh)
 - CUDA 11.1/10.2
 - Pytorch 1.8.2 （For the installation commands, be sure to check the [official page](https://pytorch.org/get-started/locally/). We recommend using pip.)
-- fairseq 1.0.0（validated commit ID: 8adff65ab30dd5f3a3589315bbc1fafad52943e7）
+- fairseq 1.0.0a0（Available only from github: validated commit ID was 8adff65ab30dd5f3a3589315bbc1fafad52943e7）
 - sentencepiece 0.1.96
 
-When installing fairseq, please check the official page and install the latest version. Normal pip install will only install the older version 0.10.2.
+When installing fairseq, please check [Requirements and Installation](https://github.com/pytorch/fairseq#requirements-and-installation) of the official page and install the latest or verified version (8adff65) using `github clone`. Normal pip install will only install the older version 0.10.2.
 If you want to run finetune with your own data, you need to install the standalone version of sentencepiece.
+
 
 
 ### fairseq-interactive

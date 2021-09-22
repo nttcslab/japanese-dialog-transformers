@@ -58,10 +58,11 @@
 - Python 3.8.10
 - CUDA 11.1/10.2
 - Pytorch 1.8.2 （インストールコマンドは必ず[公式ページ](https://pytorch.org/get-started/locally/)をご確認ください．pipを推奨します．）
-- fairseq 1.0.0（検証時のcommit IDは8adff65ab30dd5f3a3589315bbc1fafad52943e7）
+- fairseq 1.0.0a0（正式リリースではなく，`github clone`でのみダウンロード可能です．検証時のcommit IDは8adff65ab30dd5f3a3589315bbc1fafad52943e7です．）
 - sentencepiece 0.1.96
 
-fairseqのインストールに当たっては，公式ページをご確認いただき，最新版をインストールください．通常のpip installでは旧バージョンの0.10.2までしか入りません．
+fairseqのインストールに当たっては，公式ページの[Requirements and Installation](https://github.com/pytorch/fairseq#requirements-and-installation)をご確認いただき，`github clone`を利用して最新版もしくは検証済み版（8adff65）をインストールください．通常のpip installでは旧バージョンの0.10.2までしか入りません．
+
 また，独自のデータでfinetuneを行う場合は，sentencepieceのスタンドアローン版のインストールが必要です．
 
 ### 一問一答の対話（fairseq-interactive）
